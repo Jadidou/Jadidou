@@ -6,7 +6,7 @@ public class tri_fouille_s {
         System.out.println(fouille(tab));
     }
     public static int fouille(int tab[]){
-
+        /**
         for (int i = 0; i < tab.length; i++) { //fait en sorte dafficher les nombres sur la console
             System.out.println(tab[i]);
             for (int j = 0; j < tab.length; j++) {
@@ -16,12 +16,11 @@ public class tri_fouille_s {
             }
         }
         return-1;
-
-        /**
+         */
         int i = 0;
         boolean trouve = false;
 
-        while(!trouve && i < tab.length -1){
+        while(!trouve && i < tab.length){
             if(tab.length == tab[i]){
                 trouve = true;
             }
@@ -30,7 +29,6 @@ public class tri_fouille_s {
             }
         }
         return trouve ? i : -1;
-         */
     }
 
 }
